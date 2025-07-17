@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Custom scrollbar for a more modern look */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-slate-100;
+}
+.dark ::-webkit-scrollbar-track {
+  @apply bg-slate-900;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-slate-400 rounded-lg;
+}
+.dark ::-webkit-scrollbar-thumb {
+  @apply bg-slate-700;
+}
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-slate-500;
+}
+.dark ::-webkit-scrollbar-thumb:hover {
+  @apply bg-slate-600;
+}
+
+/* Blinking cursor animation */
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+.cursor-blink {
+  animation: blink 1s step-end infinite;
+}
