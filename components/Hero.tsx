@@ -1,6 +1,4 @@
 import React from 'react';
-import Section from "./Section";
-import profilePic from "../assets/profile.png"; 
 import { motion, Variants } from 'framer-motion';
 import { PERSONAL_INFO } from '../constants';
 import { useTypingEffect } from '../hooks/useTypingEffect';
