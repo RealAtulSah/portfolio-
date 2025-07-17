@@ -2,6 +2,7 @@
 import React from 'react';
 import Section from './Section';
 import { PERSONAL_INFO } from '../constants';
+import profilePic from '../assets/profile.png'; // Adjust the path to go up one level from 'components'
 
 const About: React.FC = () => {
   return (
@@ -10,7 +11,7 @@ const About: React.FC = () => {
         <div className="md:w-1/3 flex justify-center">
           <div className="w-48 h-48 md:w-64 md:h-64 rounded-full bg-slate-100 dark:bg-gray-800 shadow-lg border-4 border-gray-200 dark:border-gray-700 overflow-hidden">
             <img 
-              src={PERSONAL_INFO.profilePicture} 
+              src={profilePicture} 
               alt={`Profile picture of ${PERSONAL_INFO.name}`}
               className="w-full h-full object-contain"
             />
