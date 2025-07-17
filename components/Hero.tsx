@@ -37,13 +37,6 @@ const Hero: React.FC = () => {
             initial="hidden"
             animate="visible"
         >
-            <motion.div variants={itemVariants} className="mb-6">
-                <img
-                    src={profilePic} 
-                    alt="picture of Atul"
-                    className="h-48 w-48 rounded-full border-4 border-slate-400 object-cover"
-                />
-            </motion.div>
             <motion.h1 
                 variants={itemVariants}
                 className="text-5xl md:text-7xl font-black text-gray-900 dark:text-white mb-4"
